@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi,Im Baymax!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.cs">
+</head>
+<body>
+    <img class="image-gradient" src="gradient.png" alt="gradient">
+    <div class="layer-blur"></div>
+    <div class="grid"></div>
+    <div class="container">
+        <header>
+            <h1  data-aos="fade-down" data-aos-duration="1500"  class="logo"> Baymax</h1>
+            <nav>
+                <a href="#">COMPANY</a>
+                <a href="#">RESOURCES</a>
+                <a href="#">HELP</a>
+            </nav>
+            <button class="btn-signing">SIGNING</button>
+            </header>
+
+            <main> 
+
+            <div class="content">
+                <div class="tag-box">
+                    <div class="tag">INTRUCING &wedbar; </div>
+                </div>
+
+                <h1>EMAIL FOR<br>CREATOR</h1>
+                <p class="description">
+                    A frendly digital companian, the best way to dive into 
+                    the world of possibilty where dreams come true
+                </p>
+                <div class="buttons">
+                <a href="#" class="btn-get-started">Documentation &gt;</a>
+                <a href="#" class="btn-signing-main">Getstarted &gt;</a>
+
+
+                </div>
+            </div>
+       </main>
+    <spline-viewer class="baymax-3d" url="https://prod.spline.design/8ro40ZeSYmIG-q3Z/scene.splinecode"></spline-viewer>
+    </div>
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.5/build/spline-viewer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        const splineViewer = document.querySelector('.baymax.3d');
+        window.addEventListener('mousemove', (e) => {
+            if(splineViewer && splineViewer.scene){
+                splineViewer.scene.rotation.y=(e.clientX)
+
+            }
+         }
+    </script>
+
+
+</body>
+
+
+</html>
